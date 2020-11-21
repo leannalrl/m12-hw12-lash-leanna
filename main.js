@@ -1,10 +1,48 @@
-const get_meal_btn = document.getElementById('get_meal');
-const meal_container = document.getElementById('meal');
+let lunchlist = [{
+    idLunch: 1,
+    lunchName: 'Ham Sandwich'
+  },
+  {
+    idLunch: 2,
+    lunchName: 'Turkey Sandwich'
+  },
+  {
+    idLunch: 3,
+    lunchName: 'Apple Pie'
+  },
+   {
+    idLunch: 4,
+    lunchName: 'Pumpkin Pie'
+  },
+ {
+    idLunch: 5,
+    lunchName: 'Broccoli and Potato Casserol'
+  },
+ {
+    idLunch: 6,
+    lunchName: 'Stew'
+  },
+ {
+    idLunch: 7,
+    lunchName: 'Apple Pie'
+  },
 
-document.getElementById("get_meal").addEventListener("click", displayMeal);
+ {
+    idLunch: 8,
+    lunchName: 'Apple Pie'
+  },
+ {
+    idLunch: 9,
+    lunchName: 'Apple Pie'
+  },
+ {
+    idLunch: 10,
+    lunchName: 'Apple Pie'
+  },
+];
 
-function displayMeal() {
-  	let get_meal = [['Ham','hamsandwich.jpeg'], ['Pie', 'applepie.jpeg']]
-	.innerhtml = meal[1][0]
-	.innerhtml = meal[4][3]
-};
+function GetLunch() {
+  var random_num = Math.floor(Math.random() * lunchlist.length);
+  var random =  lunchlist[random_num].lunchName + "<br>" + lunchlist[random_num].lunchLink;
+  document.getElementById("message").innerHTML = random;
+}
