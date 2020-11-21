@@ -1,48 +1,58 @@
 let lunchlist = [{
     idLunch: 1,
-    lunchName: 'Ham Sandwich'
+    lunchName: 'Ham Sandwich',
+	lunchingredients: 'Baggett, Provalone Cheese, & Honey Backed Ham.'
   },
   {
     idLunch: 2,
-    lunchName: 'Turkey Sandwich'
+    lunchName: 'Turkey Sandwich',
+	lunchingredients: 'Baggett, Provalone Cheese, Mayo, & Turkey.'
   },
   {
     idLunch: 3,
-    lunchName: 'Apple Pie'
+    lunchName: 'Apple Pie',
+	lunchingredients: 'Pie Crust, Apple, & Cinnamon.'
   },
    {
     idLunch: 4,
-    lunchName: 'Pumpkin Pie'
+    lunchName: 'Pumpkin Pie',
+	lunchingredients: 'Pie Crust, Pumpkin, & Whipped Cream.'
   },
  {
     idLunch: 5,
-    lunchName: 'Broccoli and Potato Casserol'
+    lunchName: 'Broccoli and Potato Casserol',
+	lunchingredients: 'Broccoli, Potato, Parmesan Cheese, Milk, Flour, & Butter.'
   },
  {
     idLunch: 6,
-    lunchName: 'Stew'
+    lunchName: 'Stew',
+	lunchingredients: 'Carrots, Potatoes, Beef, & Tomatoes.'
   },
  {
     idLunch: 7,
-    lunchName: 'Apple Pie'
+    lunchName: 'French Onion Soup',
+	lunchingredients: 'Parmesan Cheese, Onions, Onion Powder, Parsley Flakes, Celery, Paprika, and black Pepper.'
   },
 
  {
     idLunch: 8,
-    lunchName: 'Apple Pie'
+    lunchName: 'Pigs in a Blanket',
+	lunchingredients: 'Mini Hotdogs & Cresent Rolls.'
   },
  {
     idLunch: 9,
-    lunchName: 'Apple Pie'
+    lunchName: 'Chili',
+	lunchingredients: 'Ground Beef, Onion, Stewed Tomatoes, Tomato Sauce, Kidney Beans, Chili Powder, Gralic Powder, Salt, & Pepper.'
   },
  {
     idLunch: 10,
-    lunchName: 'Apple Pie'
+    lunchName: 'Mac & Cheese',
+	lunchingredients: 'Melted Butter, Flour, Salt, Pepper, Cheese, & Noodles.'
   },
 ];
 
 function GetLunch() {
   var random_num = Math.floor(Math.random() * lunchlist.length);
-  var random =  lunchlist[random_num].lunchName + "<br>" + lunchlist[random_num].lunchLink;
+  var random =  lunchlist[random_num].lunchName + "<br>" + lunchlist[random_num].lunchingredients;
   document.getElementById("message").innerHTML = random;
 }
