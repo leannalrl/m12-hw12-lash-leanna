@@ -11,39 +11,26 @@ body {
 	min-height: 100vh;
 }
 
-img {
-	max-width: 100%;
+img{
+	width: 40%;
 }
 
 p {
-	margin-bottom: 5px;
-}
-
-h3 {
-	margin: 0;
-}
-
-h5 {
-	margin: 10px 0;
-}
-
-li {
-	margin-bottom: 0;
-}
-
-.meal {
-	margin: 20px 0;
-}
-
-.text-center {
+	padding-top: 6%;
 	text-align: center;
+	font-family: Libre Baskerville;
+	color: #a61827;
 }
 
-#get_meal.button-primary{
-	color: white;
-	background-color: red;
+button{
+	color: #fefafa;
+	background-color: #a61827;
+	width: 25%;
+    padding: 2%;
+	font-size: 80%;
 }
 
-#get_meal.button-primary:hover {
-	background-color: #3e8e41;
+button:hover {
+	color: #fefafa;
+	background-color: #345e2a;
 }
